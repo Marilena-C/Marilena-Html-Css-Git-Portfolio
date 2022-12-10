@@ -1,0 +1,16 @@
+/* color scheme sourced from http://khroma.co/generator/ */
+:root {
+    --outer-space: #2daf9a;
+    --light-purple: #a08fec;
+    --gin: #d6e7dd;
+    --purple: #7c4db9;
+  }
+
+  /* set content highlight color and background */
+::selection {
+    background-color: var(--light-purple);
+    color: var(--outer-space);
+  }
+body {
+
+}
