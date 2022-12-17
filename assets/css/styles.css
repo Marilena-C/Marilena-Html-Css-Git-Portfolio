@@ -1,22 +1,15 @@
 /* color scheme sourced from http://khroma.co/generator/ */
 :root {
-    --outer-space: #b3f3b1;
-    --light-purple: #a08fec;
-    --gin: #d6e7dd;
-    --purple: #7c4db9;
+    --outer-space: #c8f7c2;
+    --light-purple: #9a7eb9;
+    --gin: #cbe7dc;
+    --purple: #7248a8;
     --background-color: #25c072;
-    --global-fill--active: #d1d5e0;
-    --nav-avatar-border: #00bbe4;
-    --ic-brand-global-nav-menu-item__badge-bgd:#ffff;
-    --ic-brand-global-nav-menu-item__badge-text:#613955;
-  }
+    --nav-profile-border: #00bbe4;
+     }
 
-  /* set content highlight color and background */
-::selection {
-    background-color: var(--light-purple);
-    color: var(--outer-space);
-  }
-
+ 
+/*add scroll property to jump to link smoothly*/
   html{scroll-behavior:smooth}
 
   body {
@@ -27,17 +20,21 @@
   
   body {
     font-family: 'Oswald', sans-serif;
+    font-size: 22px;
   }
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1%;
+    width: fit-content;
     background-color:var(--background-color);
-    color: rgb(223, 114, 250);
+    color: var(--light-purple)
   }
+
+   /* set content highlight color and background */
   div {
-    background-color: rgb(200, 228, 77);
+    background-color: var(--outer-space);
   }
   
   h1 {
@@ -52,33 +49,25 @@
     margin-right: -1.5rem;
   }
   .menu-item__text {
-    transform: translate3d(-100%, 0, 0);
-    opacity: 0;
+    transform: translate3d(5%, 0, 0);
+    opacity: 70;
     pointer-events: none;
     box-sizing: border-box;
-    background-color: var(--global-fill--active);
-    position: absolute;
+    background-color: var(--background-color);
+    position: relative;
     left: 100%;
-    top: 50%;
+    top: 40%;
     padding: 0 12px;
     line-height: 1.8rem;
     margin-top: -0.9rem;
-    font-size: 14px;
-    font-size: 0.875rem;
+    font-size: 18px;
+    font-size: 1.05rem;
     border-radius: 3px;
-    color: #fff;
+    color: rgb(29, 10, 31);
     white-space: nowrap;
 }
 
-  #headline p {
-    max-width: 350px;
-    font-size: 16px;
-    font-weight: 300;
-    margin: 0px 0px;
-    color: #40816e;
-  }
-  
-  /* ul li::marker {
+   /* ul li::marker {
     content: ' ';
     color: rgb(31, 95, 6);
     font-size: 1.2em;
@@ -87,60 +76,81 @@
 /*Navigation CSS */
 #navBar {
     display: flex;
-    flex-direction: column;
-    margin: 0px 5%;
+    flex-direction: row;
+    margin: 0px 0%;
+    justify-content:space-evenly;
   }
   #navBar h1 {
-    width: 25%;
-    font-weight: 500;
+    width: 45%;
+    font-weight: 500;  
   }
   #navigation {
     display: flex;
-    width: 50%;
-    align-items: center;
-    justify-content: space-evenly;
+    position: relative;
+    width: 60%;
+    align-items:center;
+    justify-content:space-evenly;
+    background-color: var(--background-color);
   }
   #navigation p {
     cursor: pointer;
     text-decoration: none;
   }
+  /* Add icon in the nav bar */
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 25%;
+  }
+/* Highlight item in the navigation bar */
+.highlight {
+  color: var(--light-purple);
+  font-weight: 700;
+}
 
 /*Organize the page into sections using grid CSS */
 #mainGrid {
-    margin: 0px 5%;
-    display: grid;
-    min-height: 500px;
+    margin: 10px 0%;
+    display: flex;
+    min-height: 210px;
     height: 70vh;
-    grid-template-rows: 75% 25%;
-    grid-template-columns: 30% 70%;
-    grid-template-areas:
-    "featuredProduct secondaryProduct"
-    "featuredProduct CTA";
+    grid-template-rows: 40% 60%;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "about img about about"
+    ;
   }
+  .mainGridArea {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+   
 
   main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    grid-gap: 10px;
+    grid-gap: 20px;
   }
-
+  
 .flex-container {
-    max-width: 200px;
+    max-width: 127px;
 }
-
 .flex-container {
     display: flex;
     background-color: rgb(118, 205, 216);
     flex-direction: column;
   }
-  
-  .flex-container > div {
+    .flex-container > div {
     background-color: #f1f1f1;
     margin: 10px;
-    padding: 20px;
-    font-size: 30px;
+    padding: 10px;
+    font-size: 25px;
     border: 1px solid black;
   }
 
@@ -148,17 +158,17 @@
     transform: translate3d(0, 0, 0);
     position: relative;
     z-index: 1;
-    width: 48px;
+    width: 20px;
     margin: 0 auto;
     color: var(--global-fill--active);
   }
 
   .menu-item-icon-container img {
-    min-width: 40%;
+    min-width: 20%;
   }
 
-  .avatar {
-  overflow: hidden;
+  .profile {
+  overflow:visible;
   border-radius: 100%;
   border: 2px solid var(--nav-avatar-border);
   width: 50px;
@@ -167,34 +177,62 @@
   display: inline-block;
   vertical-align: middle;
   }
-  .menu-item__badge {
-  font-size: 11px;
-  font-size: 0.6875rem;
-  min-width: 20px;
-  line-height: 20px;
-  border-radius: 10px;
-  background: var(--ic-brand-primary);
-  color: #fff;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 0 6px;
-  transition: all .3s ease-out;
-  position: absolute;
-  top: -0.5em;
-  right: 0;
-  background: var(--ic-brand-global-nav-menu-item__badge-bgd);
-  color: var(--ic-brand-global-nav-menu-item__badge-text);
-}
- /*  .left-menu li {
-    padding-bottom: 80px;
-  }
 
-  .left-menu li a {
-    border: 1px solid black;
-    padding: 30px;
-  } */
+  #about {
+    
+    background-color: var(--gin);
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: space-evenly;
+}
+#img {
+  display: flex;
+  background-color: var(--gin);
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  justify-content: space-evenly;
+}
+#projectsGrid {
+  /* margin: 0px 5%; */
+  display: grid;
+  grid-template-rows: 300px 300px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "project1 project1"
+  "website2 website3";
+}
+.projectsGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  margin-top: 15px;
+  /* cursor: pointer; */
+  display: grid;
+  align-content: end;
+}
+  
+   /* Footer */
+  footer {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #f5f5f5;
+    margin-top: 50px;
+  }
+/* Card containing image and decsription */
+  .cardContainer {
+    position: relative;
+    margin-top: 5px;
+    max-width: 5px;
+    max-height: 5px;
+  }
+  .card {
+    display: flex;
+    margin: 0 auto;
+  }
 
   @media screen and (max-width: 768px) {
     main, nav {

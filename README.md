@@ -14,6 +14,7 @@ Edit styles.css file in order to style the web page properties, like
 Add some elements, usinghttps://css-tricks.com/ as inspiration <div class="my-articles" flex scroll-snaps
 
 ## Pictures
+https://github.com/Marilena-C/portfolio-project/tree/main/assets/images
 
 ## Links
 GitHub repository: https://github.com/Marilena-C/portfolio-project

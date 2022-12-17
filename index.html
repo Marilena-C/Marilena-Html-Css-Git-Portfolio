@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<!-- Required meta tags -->
 
 <head>
     <meta charset="UTF-8" />
@@ -8,17 +9,6 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" rel='stylesheet'>
     <title>HTML and CSS projects</title>
-    <style>
-        body {
-            font-family: 'Oswald';
-            font-size: 22px;
-        }
-
-        p {
-            color: rgb(3, 65, 3);
-            background-color: rgb(149, 243, 235);
-        }
-    </style>
 </head>
 
 <body>
@@ -26,59 +16,49 @@
         <h1 style="color: green">Marilena's portfolio</h1>
         <div id="navigation">
             <p class="highlight">Home</p>
-            <p>About</p>
+            <div><a href="./assets/content/about.html" class="external" target="blank">About</a></div>
+            <a href="mailto:marilena.cancel@gmail.com">Contact</a>
         </div>
-        <header>
-            <div id="header" class="menu-item__text ">
-
-                <div class="ic-app-header__logomark-container">
-                    <a href="https://marilena-c.github.io/portfolio-project/">
-                        <span class="screenreader-only">Dashboard</span>
-                    </a>
-                </div>
-                <ul id="menu" class="ic-app-header__menu-list">
-                    <li class="menu-item ic-app-header__menu-list-item ">
-                        <button id="global_nav_profile_link" class="ic-app-header__menu-list-link">
-                            <div class="menu-item-icon-container">
-                                <div aria-hidden="true" class="avatar ">
-                                    <img src="..images/8-13_resize.jpg" alt="Cancel, Marilena">
-                                </div>
-                                <span class="menu-item__badge"></span>
-                            </div>
-                            <div class="menu-item__text">
-                                Account
-                            </div>
-                        </button>
-                    </li>
-
-                </ul>
-            </div>
-            
-        </header>
+        <div class="icons">
+            <img src="./assets/images/user.png">
+        </div>
     </nav>
-
-
-    <main>
-        <div>
-            <div class="flex-container">
-                <div><a href="http://127.0.0.1:5500/Challenge-2/portfolio-project/index.html" class="external" target="_blank">Home</a></div>
-                <div><a href="./content/about.html"class="external" target="_blank"></a>About</a></div>
-                <div><a href="#mini-projects">Mini-projects</a></div>  
-           <!--  <ul class="left-menu">
-                <li><a href="http://127.0.0.1:5500/Challenge-2/portfolio-project/index.html" class="external"
-                        target="_blank">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#mini-projects" class="external">Mini-projects</a></li>
-                <li><a href="mailto:marilena.cancel@gmail.com">Contact</a></li>
-                <li><a href="#resources">Resources</a></li>
-            </ul> -->
+    <section>
+     <div id="main" class="flex-container">
+       
+        <div><a href="#mini-projects">Mini-projects</a></div>
+        <div><a href="#resources">Resources</a></div>
+     </div>
+    </section>
+    <section id="mainGrid">
+                           <div id="about">
+                    <h3><b>Hi everyone and welcome to my portfolio page :-)</b></h3>
+                     <br>
+                     <img src ="assets/images/02-portfolio-2-resize.jpg">
+                    <h3>My name is Marilena and I am studying Fron-End Web Development and User Experience through the Skills Bootcamp run by University of Birmingham and edx.</h3>
+                    <h3>I have done a couple of projects which helped me understand the basics of HTML and CSS and I
+                            can't wait to learn more and improve my skills.</h3>
+                </div>
+    </section>
+        <!-- Card with image and text -->
+        <div class="cardContainer">
+            <div class="card">
+                <img src="./assets/images/Horizon1.png" class="card-img-top" alt="Horiseon marketing">
+                <div class="card-body">
+                    <h5 class="card-title">Horiseon Social Media Marketing</h5>
+                    <p class="card-text">Re-factor website in order to improve accessibility and search engine operation.</p>
+                    <a href="#mini-projects" class="btn btn-primary">Go to mini-projects</a>
+                </div>
+            </div>
         </div>
+
+        </section>
         
         <section>
             <article>
                 <h2>A list of site content</h2>
-                <div class="grid-container">
-                    <div class="demo">Student Bio</div>
+                <div class="flex-container">
+                    <div class="item1">Student Bio</div>
                     <div class="item2">Horiseon</div>
                     <div class="item3">Furniture</div>
                 </div>
@@ -90,7 +70,6 @@
                     </p>
 
                     <div class="my-articles" flex scroll-snaps> </div>
-
                     <ul>
                         <li id="mini-projects">
                             My Mini-projects are available in GitHub <a href="https://github.com/">Repositories</a>
@@ -115,7 +94,7 @@
                                 <a href="https://github.com/Marilena-C/horizon-1" class="external" target="_blank"
                                     rel="noreferrer noopener"
                                     aria-label="Practice: Mini-project Horiseon (Links to an external site).">
-                                    <span>Practice: Mini-project Horiseon</span>
+                                    <span>Practice: Mini-project Horiseon marketing</span>
                                     <span class="external_link_icon" style="margin-inline-start: 5px; "
                                         role="presentation">
                             </p>
@@ -135,7 +114,8 @@
                             browser styles.
                         </p>
 
-                        <li>Resources are available here, <a href="https://css-tricks.com/">CSS Tricks,</a> has a
+                        <li id="resources">
+                            Resources are listed below <a href="https://css-tricks.com/">CSS Tricks,</a> has a
                             lot of articles and resources to make you a better developer!
                         </li>
                         <p>
@@ -146,36 +126,43 @@
                     </ul>
 
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus recusandae amet nostrum
-                        odit, ut unde non sint, quia sed inventore odio, delectus iure! Eligendi vitae fuga
-                        blanditiis accusamus tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Consectetur, nisi, saepe quas sint consequuntur esse voluptatum, dolores dolor aspernatur
-                        neque laborum dolorum dolorem repudiandae. Dignissimos eveniet sequi
-                        corporis tempore ullam!
-                    </p>
-
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus recusandae amet nostrum
-                        odit, ut unde non sint, quia sed inventore odio, delectus iure! Eligendi vitae fuga
-                        blanditiis accusamus tempore!
+                        More projects are in progress.
                     </p>
                 </div>
             </article>
         </section>
-    </main>
+        <b>
+        <section id="projectsGrid">
+            <div id="project1" class="projectsGridArea">
+                <div class="grid-text">
+                  <a href="https://github.com/Marilena-C/horizon-1" class="external" target="_blank">Horiseon</a>
+                </div>
+            </div>
+            <div id="website2" class="portfolioGridArea">
+                <div class="grid-text">
+                  <a href="https://github.com/Marilena-C/day-two" target="_blank">Student Bio</a>
+                </div>
+    
+            </div>
+            <div id="website3" class="portfolioGridArea">
+                <div class="grid-text">
+                  <a href="https://valimanea.github.io/Class_work-2_Furniture/" target="_blank">Furniture</a>
+                </div>
+    
+            </div>
+            </section>
 
-    <!-- Footer HTML -->
-    <footer>
-        <span>Thanks for visiting!</span>
+        <!-- Footer HTML -->
+        <footer>
+            <span>Thanks for visiting!</span>
 
-        <div class="footer">
-            <a href="https://github.com/Marilena-C" class="gh" target="_blank">GitHub</a>
-            <a href="#" class="fb">Facebook</a>
-            <a href="#" class="tw">Twitter</a>
-            <a href="#" class="ig">Instagram</a>
-        </div>
-    </footer>
-
+            <div class="footer">
+                <a href="https://github.com/Marilena-C" class="gh" target="_blank">GitHub</a>
+                <a href="#" class="fb">Facebook</a>
+                <a href="#" class="tw">Twitter</a>
+                <a href="#" class="ig">Instagram</a>
+            </div>
+        </footer>
 </body>
 
 </html>
