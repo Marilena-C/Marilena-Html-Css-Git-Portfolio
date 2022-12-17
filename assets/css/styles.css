@@ -95,6 +95,7 @@
   #navigation p {
     cursor: pointer;
     text-decoration: none;
+    font-size:larger;
   }
   /* Add icon in the nav bar */
 .icons {
@@ -111,32 +112,29 @@
 
 /*Organize the page into sections using grid CSS */
 #mainGrid {
-    margin: 10px 0%;
+    margin: -10px 0%;
     display: flex;
     min-height: 210px;
-    height: 70vh;
+    height: 40vh;
     grid-template-rows: 40% 60%;
     grid-template-columns: 40% 60%;
-    grid-template-areas: "about img about about"
-    ;
-  }
+}
   .mainGridArea {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     align-items: center;
     display: flex;
     position: relative;
 }
-   
 
-  main {
+main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    grid-gap: 20px;
-  }
+    grid-gap: 10px;
+ }
   
 .flex-container {
     max-width: 127px;
@@ -178,13 +176,14 @@
   vertical-align: middle;
   }
 
-  #about {
+ #about {
     
     background-color: var(--gin);
     padding: 10px;
     margin-top: 15px;
     margin-bottom: 15px;
     justify-content: space-evenly;
+    font-stretch: normal;
 }
 #img {
   display: flex;
