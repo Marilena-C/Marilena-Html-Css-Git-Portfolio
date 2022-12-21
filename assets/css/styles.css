@@ -112,10 +112,9 @@
 
 /*Organize the page into sections using grid CSS */
 #mainGrid {
-    margin: -10px 0%;
+    margin: 0px 0%;
     display: flex;
     min-height: 210px;
-    height: 40vh;
     grid-template-rows: 40% 60%;
     grid-template-columns: 40% 60%;
 }
