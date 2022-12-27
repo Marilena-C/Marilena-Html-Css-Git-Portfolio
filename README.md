@@ -2,7 +2,7 @@
 
 ## Decription 
 My portfolio webpage includes a navigation bar, a header image, a footer.
-The navigation menue takes the user to a separate page, that can be opened in a new tab. Each page has a background picture.
+The navigation menu takes the user to a separate page, that can be opened in a new tab. Each page has a background picture.
 
 ## Activities covered
 
@@ -14,8 +14,8 @@ Edit styles.css file in order to style the web page properties, like
 Add some elements, usinghttps://css-tricks.com/ as inspiration <div class="my-articles" flex scroll-snaps
 
 ## Pictures
-https://github.com/Marilena-C/portfolio-project/tree/main/assets/images/screenshot
-https://github.com/Marilena-C/portfolio-project/tree/main/assets/images/screenshot_About
+https://github.com/Marilena-C/portfolio-project/blob/main/assets/images/screenshot.png
+https://github.com/Marilena-C/portfolio-project/blob/main/assets/images/screenshot_About.png
 
 ## Links
 GitHub repository: https://github.com/Marilena-C/portfolio-project
