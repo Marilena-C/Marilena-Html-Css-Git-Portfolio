@@ -100,9 +100,9 @@
   /* Add icon in the nav bar */
 .icons {
   display: flex;
-  justify-content:first baseline;
+  justify-content:center;
   align-items:center;
-  width: 25%;
+  width: 10%;
   }
 /* Highlight item in the navigation bar */
 .highlight {
@@ -132,7 +132,7 @@
 }
 
 #content_div{
-  flex: 85%;
+  flex: 90%;
 }
 #grid_menu{
   flex: 0.5%;
@@ -176,14 +176,14 @@ main {
     z-index: 1;
     width: 20px;
     margin: 0 auto;
-    color: var(--global-fill--active);
+    color: var(--outer-space);
   }
 
   .menu-item-icon-container img {
     min-width: 20%;
   }
 
-  .profile {
+/*   .profile {
   overflow:visible;
   border-radius: 100%;
   border: 2px solid var(--nav-avatar-border);
@@ -192,7 +192,7 @@ main {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
-  }
+  } */
 
  #about {
     
@@ -241,6 +241,7 @@ main {
 #project2 {
   grid-area: project2;
   background-image: url("../images/restaurant_and-sandwich-list.jpg");
+  background-repeat: no-repeat;
 }
 #project3 {
   grid-area: project3;
