@@ -100,8 +100,8 @@
   /* Add icon in the nav bar */
 .icons {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content:first baseline;
+  align-items:center;
   width: 25%;
   }
 /* Highlight item in the navigation bar */
@@ -112,11 +112,30 @@
 
 /*Organize the page into sections using grid CSS */
 #mainGrid {
-    margin: 0px 0%;
+  /*   margin: 0px 0%;
     display: flex;
     min-height: 210px;
     grid-template-rows: 40% 60%;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 40% 60%; */
+    flex: 85%;
+}
+#parent_div{
+  display: flex;
+  width: 100%;
+}
+#img_content_parent{
+  display: flex;
+  width: 100%; 
+}
+#img_div{
+  flex: 15%;
+}
+
+#content_div{
+  flex: 85%;
+}
+#grid_menu{
+  flex: 0.5%;
 }
   .mainGridArea {
     background-position: center;
