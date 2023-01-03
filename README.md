@@ -11,7 +11,7 @@ Add "viewpoint" meta tag for media, in order to be able to use media features to
 Specify Oswald font style in html and css.
 Add navigation properties, inspired from the code used for Furniture exercise.
 Edit styles.css file in order to style the web page properties, like 
-Add some elements, usinghttps://css-tricks.com/ as inspiration <div class="my-articles" flex scroll-snaps
+Add some elements, using https://css-tricks.com/ as inspiration <div class="my-articles" flex scroll-snaps
 
 ## Pictures
 https://github.com/Marilena-C/portfolio-project/blob/main/assets/images/screenshot.png
@@ -20,4 +20,5 @@ https://github.com/Marilena-C/portfolio-project/blob/main/assets/images/screensh
 
 ## Links
 GitHub repository: https://github.com/Marilena-C/portfolio-project
+
 Live page: https://marilena-c.github.io/portfolio-project/
