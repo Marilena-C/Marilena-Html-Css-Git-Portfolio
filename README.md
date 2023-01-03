@@ -19,6 +19,6 @@ https://github.com/Marilena-C/portfolio-project/blob/main/assets/images/screensh
 
 
 ## Links
-GitHub repository: https://github.com/Marilena-C/portfolio-project
+GitHub repository: https://github.com/Marilena-C/Marilena-Html-Css-Git-Portfolio
 
-Live page: https://marilena-c.github.io/portfolio-project/
+Live page: https://marilena-c.github.io/Marilena-Html-Css-Git-Portfolio/
